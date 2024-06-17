@@ -1,14 +1,25 @@
 /* confg gerais */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad:wght@100..400&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #fff;
+}
+:root{
+    --corbtnh2: #FFAE00 ;
+    --arredondamentoBordas: 10px;
+    --fontall: "Roboto", sans-serif;
+    --fontTitleNav: "Playwrite FR Trad", cursive;
+    
 }
 html,body{
     height: 100vh;
     width: 100vw;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fontall);
 }
 body{
     background-image: url(imagens/bg.png);
@@ -21,9 +32,9 @@ body{
 /* header do site */
 header{
     display: flex;
-    justify-content: center;
+    justify-content: center; /*margin: auto*/
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; /*Display: block nos elementos internos*/
     background-color: #1E1F22;
     padding: 10px;
     margin-bottom: 10px;
@@ -40,18 +51,18 @@ nav{
     margin: auto;
     width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*Margin entre os links*/
     align-items: center;
     gap: 20px;
     list-style: none;
+    font-family: var(--fontTitleNav);
 }
 .list-nav a{
     text-decoration: none;
-    color: #fff;
     font-size: 1.2rem;
 }
 .list-nav a:hover{
-    color: #FFAE00;
+    color: var(--corbtnh2);
 }
 /* Conteudo principal do cardapio */
 main{
@@ -59,9 +70,15 @@ main{
     max-width: 800px;
     padding: 20px;
 }
+h1{
+    
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: var(--fontTitleNav);
+}
 h2{
     text-align: center;
-    color: #FFAE00;
+    color: var(--corbtnh2);
     font-weight: bold;
     margin: 10px;
     width: 100%;
@@ -70,12 +87,46 @@ h2{
 .baner{
     width: 100%;
     height: 100%;
-    display: flex;
+    display: flex; /*display: inline_block nos elementos intenros*/
     justify-content: center;
-    align-items: center;
-    background-color: RGBA(37, 37, 37, 0.8);
+    align-items: center; /* margin auto*/
+    background-color: rgba(37, 37, 37, 0.8);
     padding: 20px;
+    border-radius: var(--arredondamentoBordas);
+}
+.container-imgs{
+    width: 100% ;
+    margin-right: 10px;
 }
 .container-imgs img{
-    width: 290px;
+    width: 100%;
+}
+#img-maior .container-imgs {
+    margin-left: -2.3%;
+    width: 90%;
+}
+#img-maior .cotainer-info{
+    margin-left: -3%;
+}
+
+.cotainer-info{
+    max-width: 450px;
+}
+.cotainer-info h3{
+   
+    margin-bottom: 10px;
+}
+.cotainer-info button{
+    background-color: var(--corbtnh2);
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 30px;
+    width: 40%;
+    border: none;
+    border-radius: var(--arredondamentoBordas);
+    cursor: pointer;
+}
+.cotainer-info button:hover{
+    
+    background-color: #c08301;
 }
