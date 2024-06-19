@@ -139,3 +139,59 @@ h2{
     
     background-color: #c08301;
 }
+.offcanvas-header{
+    background-color:#1E1F22 ;
+    font-family: var(--fontTitleNav);
+}
+#contCardsPedidos{
+    margin: 10px auto;
+   
+}
+.cardPedido{
+    background-color: #1E1F22;
+    border-radius: 6px;
+    
+}
+.contBtnPedidos{
+    display: flex;
+    justify-content: center;
+}
+.contImgPedido{
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contValorNome{
+    background-color: #1e1f22dd;
+    background-image: url(imagens/bg.png);
+    background-position: center;
+    background-size: contain;
+    border-radius: var(--arredondamentoBordas);
+}
+
+.contBtnPedidos button{
+    background-color: #FFAE00;
+    padding: 8px;
+    border-radius: var(--arredondamentoBordas);
+    width: 21%;
+}
+.contBtnPedidos input{
+    margin: 0 10px;
+    padding: 8px;
+    border: 2px solid black;
+    background-color: #fff;
+    color: black;
+    width: 20%;
+}
+
+#btnFimPedidos{
+    
+    padding: 10px;
+    background-color: var(--corbtnh2);
+    border: none;
+    border-radius: var(--arredondamentoBordas);
+    width: 200px;
+    
+}
+
