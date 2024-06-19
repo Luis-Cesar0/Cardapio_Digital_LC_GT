@@ -80,9 +80,7 @@ main{
     padding: 20px;
 }
 h1{
-    
     text-align: center;
-    margin-bottom: 10px;
     font-family: var(--fontTitleNav);
 }
 h2{
@@ -93,15 +91,19 @@ h2{
     width: 100%;
     
 }
+.contTiposProdutodos{
+    border-radius: var(--arredondamentoBordas);
+    background-color: rgba(37, 37, 37, 0.8);
+    margin: 20px 0;
+}
 .baner{
     width: 100%;
     height: 100%;
     display: flex; /*display: inline_block nos elementos intenros*/
     justify-content: center;
     align-items: center; /* margin auto*/
-    background-color: rgba(37, 37, 37, 0.8);
     padding: 20px;
-    border-radius: var(--arredondamentoBordas);
+   
 }
 .container-imgs{
     width: 100% ;
@@ -139,13 +141,24 @@ h2{
     
     background-color: #c08301;
 }
+/* offcanvas */
 .offcanvas-header{
     background-color:#1E1F22 ;
     font-family: var(--fontTitleNav);
 }
+
 #contCardsPedidos{
     margin: 10px auto;
+    overflow-y: scroll;
+    
    
+}
+#contCardsPedidos::-webkit-scrollbar{
+    width: 10px;
+}
+#contCardsPedidos::-webkit-scrollbar-thumb{
+    background-color: #ffffff3c;
+    border-radius: var(--arredondamentoBordas);
 }
 .cardPedido{
     background-color: #1E1F22;
@@ -163,7 +176,7 @@ h2{
     justify-content: center;
 }
 .contValorNome{
-    background-color: #1e1f22dd;
+    
     background-image: url(imagens/bg.png);
     background-position: center;
     background-size: contain;
@@ -186,7 +199,7 @@ h2{
 }
 
 #btnFimPedidos{
-    
+    margin: auto;
     padding: 10px;
     background-color: var(--corbtnh2);
     border: none;
@@ -194,4 +207,10 @@ h2{
     width: 200px;
     
 }
+#contFimTotal{
+    display: contents;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
