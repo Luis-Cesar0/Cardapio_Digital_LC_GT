@@ -25,6 +25,51 @@
               </a>
     </header>
     <main>
+        <!-- Carousel -->
+         <div id="contCarrocel" class="container-fluid w-75 ">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+
+                    <img src="imagens/burger-faca-ban.jpg" class="d-block w-100" alt="...">
+
+                  </div>
+
+                  <div class="carousel-item">
+
+                    <img src="imagens/burger-foco.jpg" class="d-block w-100" alt="...">
+
+                  </div>
+
+                  <div class="carousel-item">
+
+                    <img src="imagens/burger-foco.jpg" class="d-block w-100" alt="...">
+
+                  </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                  <span class="visually-hidden">Previous</span>
+
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                  <span class="visually-hidden">Next</span>
+
+                </button>
+
+              </div>
+
+         </div>
+        <!-- cardapio -->
         <h1 class="mb-5">Cardápio Digital</h1>
         <section id="humburgueres" >
             <h2>HAMBURGUERES</h2>
@@ -37,7 +82,10 @@
                         <h3> Clássico Angus Burger - <strong>R$22,50</strong></h3>
                         <p>Descrição: Delicie-se com o nosso Hambúrguer Clássico, feito com um suculento hambúrguer de carne angus, queijo derretido, alface crocante, tomate fresco e um toque especial do nosso molho secreto. Perfeito para saciar sua fome!
                         </p>
-                        <button>Pedir</button>
+                        <div>
+                            <button>Pedir</button>
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal">ver detalhes</button>
+                        </div>
                     </div>
                 </div>
                 <div class="baner" id="img-maior">
@@ -47,7 +95,10 @@
                     <div class="cotainer-info">
                         <h3>Gourmet Burger - <strong>R$35,00</strong></h3>
                         <p>Descrição: O nosso Hambúrguer Gourmet, preparado com um suculento hambúrguer de carne nobre, queijo derretido, cebola caramelizada e baccon. Uma escolha irresistível!</p>
-                        <button>Pedir</button>
+                        <div>
+                            <button>Pedir</button>
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal">ver detalhes</button>
+                        </div>
                     </div>
                 </div>
            
@@ -58,7 +109,10 @@
                     <div class="cotainer-info">
                         <h3>Defumado BBQ Burger - <strong>R$29,00</strong></h3>
                         <p>Descrição: Deixe-se envolver pelo sabor defumado do nosso Hambúrguer BBQ, uma deliciosa combinação de hambúrguer de carne suculenta, queijo cheddar derretido, cebola caramelizada e salada verde.</p>
-                        <button>Pedir</button>
+                        <div>
+                            <button>Pedir</button>
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal">ver detalhes</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,7 +128,10 @@
                         <h3>Fritas - <strong>R$15,00</strong></h3>
                         <p>Descrição: Nossas batatas fritas são o acompanhamento perfeito para qualquer refeição! Cortadas em palitos e fritas até ficarem douradas e crocantes por fora, e macias por dentro, elas são irresistíveis em cada mordida.
                         </p>
-                        <button>Pedir</button>
+                        <div>
+                            <button>Pedir</button>
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal">ver detalhes</button>
+                        </div>
                     </div>
                 </div>
                 <div class="baner">
@@ -84,7 +141,10 @@
                     <div class="cotainer-info">
                         <h3>Aneis de cebola - <strong>R$25,00</strong></h3>
                         <p>Descrição: Nossas Aneis de cebola são o acompanhamento perfeito para qualquer refeição! Cortadas em aineis e fritas até ficarem douradas e crocantes por fora, e macias por dentro, elas são irresistíveis em cada mordida.</p>
-                        <button>Pedir</button>
+                        <div>
+                            <button>Pedir</button>
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal">ver detalhes</button>
+                        </div>
                     </div>
                 </div>
            </div>
@@ -99,7 +159,10 @@
                     <div class="cotainer-info">
                         <h3>Coca-Cola - <strong>R$5,00</strong></h3>
                         <p>Descrição: Refresque-se com a clássica Coca-Cola gelada, uma bebida que encanta paladares há décadas. Com seu sabor único e inconfundível para acompanhar seu hambúrguer ou batatas fritas.</p>
-                        <button>Pedir</button>
+                        <div>
+                            <button>Pedir</button>
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal">ver detalhes</button>
+                        </div>
                     </div>
                 </div>
                 <div class="baner">
@@ -110,7 +173,10 @@
                         <h3>Sprite - <strong>R$5,00</strong></h3>
                         <p>Descrição: Revitalize seus sentidos com a refrescante Sprite, uma bebida cítrica e efervescente que desperta os sentidos e eleva o seu ânimo para acompanhar seu hambúrguer ou batatas fritas.
                         </p>
-                        <button>Pedir</button>
+                        <div>
+                            <button>Pedir</button>
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal">ver detalhes</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -336,6 +402,23 @@
                 <button id="btnFimPedidos">Finalizar</button>
             </div>
         </div>
+        <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" >
+        <div class="modal-content modalCotainer">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5 " id="exampleModalLabel">Exemplo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore sint quod aut, harum earum ab. Deserunt beatae quasi quo veritatis enim debitis ipsum sunt labore! Deserunt consectetur voluptatum maiores.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
             
         
     </main>
