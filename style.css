@@ -189,6 +189,11 @@ h2{
     border-radius: var(--arredondamentoBordas);
     width: 21%;
 }
+.btnRemover{
+    padding: 8px;
+    border-radius: var(--arredondamentoBordas);
+    width: 21%;
+}
 .contBtnPedidos input{
     margin: 0 10px;
     padding: 8px;
@@ -215,7 +220,10 @@ h2{
 
 
 /* modal */
-.modalCotainer{
-    background-color: #1E1F22;
+#ingre_adcional h6,
+#titlemodal{
+   color: black;
+    
 }
+
 
